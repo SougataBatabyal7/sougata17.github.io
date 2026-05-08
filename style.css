@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a2e);
+    background-size: 400% 400%;
+    animation: bg 10s infinite;
+}
+
+/* BACKGROUND */
+@keyframes bg {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.profile {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    background: #00ffcc;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CONTACT ICONS */
+.icons i {
+    margin-right: 10px;
+}
