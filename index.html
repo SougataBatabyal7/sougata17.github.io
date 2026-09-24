@@ -1,164 +1,885 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sougata Batabyal - Data Analyst specializing in Advanced Excel, SQL, Power BI, Python, VBA, MIS and Business Analytics.">
+
+    <meta name="author" content="Sougata Batabyal">
+
     <title>Sougata Batabyal | Data Analyst</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4e6b2f1c1f.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Sougata</h2>
+    <!-- Background Effects -->
+    <div class="background-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
 
-        <div>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>S</span>ougata<span>.</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="resume.pdf" download class="nav-resume">
+                Resume <i class="fas fa-arrow-down"></i>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content reveal">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+
+                <p class="hero-intro">
+                    HELLO, I'M
+                </p>
+
+                <h1>
+                    Sougata
+                    <span>Batabyal</span>
+                </h1>
+
+                <div class="typing-wrapper">
+                    <span class="typing-prefix">I am a </span>
+                    <span class="typing"></span>
+                    <span class="cursor">|</span>
+                </div>
+
+                <p class="hero-description">
+                    Data Analyst focused on transforming complex data into
+                    meaningful insights, actionable dashboards and smarter
+                    business decisions.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <a href="resume.pdf" download class="btn btn-secondary">
+                        Download Resume
+                        <i class="fas fa-download"></i>
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://linkedin.com/in/sougata-batabyal-84b1341b7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="mailto:sougatabatabyal7@gmail.com"
+                        aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual reveal">
+
+                <div class="profile-wrapper">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="profile-glow"></div>
+
+                    <img src="profile.jpg"
+                        alt="Portrait of Sougata Batabyal"
+                        class="profile">
+
+                    <div class="floating-card card-excel">
+                        <i class="fas fa-table"></i>
+                        <div>
+                            <strong>Excel</strong>
+                            <small>Advanced</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-powerbi">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <strong>Power BI</strong>
+                            <small>Dashboard</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-sql">
+                        <i class="fas fa-database"></i>
+                        <div>
+                            <strong>SQL</strong>
+                            <small>Analytics</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="stats-container">
+
+                <div class="stat-item reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-column"></i>
+                    </div>
+
+                    <div>
+                        <h3>Data</h3>
+                        <p>Driven Decisions</p>
+                    </div>
+                </div>
+
+                <div class="stat-item reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+
+                    <div>
+                        <h3>Excel</h3>
+                        <p>Advanced Analytics</p>
+                    </div>
+                </div>
+
+                <div class="stat-item reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+
+                    <div>
+                        <h3>Power BI</h3>
+                        <p>Interactive Dashboards</p>
+                    </div>
+                </div>
+
+                <div class="stat-item reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <div>
+                        <h3>SQL</h3>
+                        <p>Data Management</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">01</span>
+
+                <div>
+                    <p class="eyebrow">ABOUT ME</p>
+                    <h2>Turning Data Into <span>Insights</span></h2>
+                </div>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <p class="lead">
+                        I’m a Data Analyst with a background in Economics,
+                        passionate about using data to understand business
+                        problems and create practical solutions.
+                    </p>
+
+                    <p>
+                        Currently working as a Data Analyst in the MIS team at
+                        BiGo Electric Pvt. Ltd., where I work with operational
+                        data, reporting, dashboards, business analysis and
+                        data-driven decision making.
+                    </p>
+
+                    <p>
+                        My toolkit includes Advanced Excel, SQL, Power BI,
+                        VBA and Python. I enjoy working with large datasets,
+                        identifying patterns and converting raw information
+                        into clear and actionable insights.
+                    </p>
+
+                    <div class="about-details">
+
+                        <div>
+                            <span>Education</span>
+                            <strong>M.A. Economics</strong>
+                        </div>
+
+                        <div>
+                            <span>Current Role</span>
+                            <strong>Data Analyst – MIS</strong>
+                        </div>
+
+                        <div>
+                            <span>Industry</span>
+                            <strong>EV & Mobility</strong>
+                        </div>
+
+                        <div>
+                            <span>Based In</span>
+                            <strong>Kolkata, India</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-card reveal">
+
+                    <div class="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p><span class="terminal-green">const</span> analyst = {</p>
+
+                        <p class="indent">
+                            name:
+                            <span class="terminal-value">
+                                "Sougata Batabyal"
+                            </span>,
+                        </p>
+
+                        <p class="indent">
+                            role:
+                            <span class="terminal-value">
+                                "Data Analyst"
+                            </span>,
+                        </p>
+
+                        <p class="indent">
+                            education:
+                            <span class="terminal-value">
+                                "M.A. Economics"
+                            </span>,
+                        </p>
+
+                        <p class="indent">
+                            focus:
+                            <span class="terminal-value">
+                                "Business Analytics"
+                            </span>,
+                        </p>
+
+                        <p class="indent">
+                            tools:
+                            <span class="terminal-value">
+                                ["Excel", "SQL", "Power BI", "Python"]
+                            </span>
+                        </p>
+
+                        <p>};</p>
+
+                        <p class="terminal-cursor">
+                            <span>></span> Building insights...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section id="experience" class="section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">02</span>
+
+                <div>
+                    <p class="eyebrow">EXPERIENCE</p>
+                    <h2>My Professional <span>Journey</span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <div class="timeline-top">
+
+                            <div>
+                                <span class="timeline-date">
+                                    CURRENT ROLE
+                                </span>
+
+                                <h3>Data Analyst – MIS</h3>
+
+                                <h4>BiGo Electric Pvt. Ltd.</h4>
+                            </div>
+
+                            <span class="experience-badge">
+                                Data Analytics
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Working with operational and business data to
+                            develop MIS reports, dashboards and analytical
+                            solutions that support management decision-making.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Excel</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                            <span>VBA</span>
+                            <span>Python</span>
+                            <span>MIS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">03</span>
+
+                <div>
+                    <p class="eyebrow">SKILLS & TOOLS</p>
+                    <h2>My <span>Technical Toolkit</span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <h3>Data Analytics</h3>
+
+                    <p>
+                        Data analysis, KPI tracking, business insights,
+                        reporting and decision support.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Excel</span>
+                        <span>Statistics</span>
+                        <span>MIS</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <h3>SQL & Database</h3>
+
+                    <p>
+                        Querying, filtering, joins, aggregation and
+                        extracting meaningful information from databases.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>Queries</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+
+                    <h3>Business Intelligence</h3>
+
+                    <p>
+                        Building interactive dashboards and visual reports
+                        to communicate business performance.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Visualization</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+
+                    <h3>Programming</h3>
+
+                    <p>
+                        Using Python and VBA for data processing,
+                        automation and analytical workflows.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>VBA</span>
+                        <span>Automation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">04</span>
+
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Featured <span>Projects</span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 1 -->
+
+                <article class="project-card featured-project reveal">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            MACHINE LEARNING
+                        </span>
+
+                        <h3>
+                            Predictive Quality Analytics
+                        </h3>
+
+                        <p>
+                            Developed a predictive analytics solution using
+                            Python to identify manufacturing quality defects
+                            and generate data-driven insights for improving
+                            operational efficiency.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>EDA</span>
+                            <span>Logistic Regression</span>
+                            <span>Analytics</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-chart-column"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            BUSINESS INTELLIGENCE
+                        </span>
+
+                        <h3>
+                            Power BI Business Dashboard
+                        </h3>
+
+                        <p>
+                            Designed interactive dashboards to monitor KPIs,
+                            operational performance and business metrics,
+                            enabling faster data-driven decision making.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>KPIs</span>
+                            <span>Visualization</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            MIS & REPORTING
+                        </span>
+
+                        <h3>
+                            Automated MIS Reporting
+                        </h3>
+
+                        <p>
+                            Created structured reporting workflows using
+                            Excel, SQL, VBA and data validation techniques
+                            to improve reporting accuracy and efficiency.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Excel</span>
+                            <span>SQL</span>
+                            <span>VBA</span>
+                            <span>MIS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section reveal">
+
+            <div class="cta-content">
+
+                <span class="eyebrow">LET'S CONNECT</span>
+
+                <h2>
+                    Have a Data Challenge?
+                    <span>Let's Talk.</span>
+                </h2>
+
+                <p>
+                    I'm always interested in discussing data analytics,
+                    business intelligence, dashboards and new opportunities.
+                </p>
+
+                <a href="mailto:sougatabatabyal7@gmail.com"
+                    class="btn btn-primary">
+
+                    Start a Conversation
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">05</span>
+
+                <div>
+                    <p class="eyebrow">CONTACT</p>
+                    <h2>Let's <span>Connect</span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <a href="mailto:sougatabatabyal7@gmail.com"
+                    class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <strong>sougatabatabyal7@gmail.com</strong>
+                    </div>
+
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+
+                </a>
+
+
+                <a href="tel:+918910107759"
+                    class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <span>Phone</span>
+                        <strong>+91 8910107759</strong>
+                    </div>
+
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+
+                </a>
+
+
+                <a href="https://linkedin.com/in/sougata-batabyal-84b1341b7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+
+                    <div>
+                        <span>LinkedIn</span>
+                        <strong>Connect with me</strong>
+                    </div>
+
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+
+                </a>
+
+
+                <a href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+
+                    <div>
+                        <span>GitHub</span>
+                        <strong>View my projects</strong>
+                    </div>
+
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            Sougata<span>.</span>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="about" class="hero">
-
-        <!-- Replace profile.jpg with your actual image name -->
-        <img src="profile.jpg" alt="Sougata Batabyal" class="profile">
-
-        <h1>Sougata Batabyal</h1>
-
-        <h2 class="typing"></h2>
 
         <p>
-            Data Analyst skilled in Advanced Excel, SQL, VBA, Power BI and Python.
-            Passionate about transforming raw data into meaningful insights and
-            helping businesses make data-driven decisions.
+            Data Analyst • Business Intelligence • MIS
         </p>
 
-        <div class="buttons">
-            <a href="resume.pdf" download>
-                <button class="btn">Download Resume</button>
+        <div class="footer-socials">
+
+            <a href="https://linkedin.com/in/sougata-batabyal-84b1341b7"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
             </a>
 
-            <a href="https://linkedin.com/in/sougata-batabyal-84b1341b7" target="_blank">
-                <button class="btn outline">LinkedIn</button>
+            <a href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
             </a>
-        </div>
 
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="grid-2">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="card">
-            <h3>Predictive Quality Analytics for Defect Detection</h3>
-
-            <p>
-                Developed a predictive analytics solution using Python to identify
-                quality defects and improve manufacturing efficiency through
-                data-driven insights.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Power BI Dashboard</h3>
-
-            <p>
-                Designed interactive dashboards to monitor KPIs, business
-                performance, and operational metrics using Power BI.
-            </p>
-        </div>
-
-    </section>
-
-    <!-- Resume -->
-    <section id="resume" class="grid-2">
-
-        <h2 class="section-title">Resume</h2>
-
-        <div class="card">
-            <h3>Highest Qualification</h3>
-
-            <p>M.A. Economics</p>
-        </div>
-
-        <div class="card">
-            <h3>Professional Experience</h3>
-
-            <p><strong>Data Analyst</strong></p>
-
-            <p>BiGo Electric Private Limited</p>
-
-            <p>08 Months Experience</p>
-        </div>
-
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="grid-2">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="card">
-            <h3>Analytics & BI</h3>
-
-            <p>
-                Advanced Excel<br>
-                Power BI<br>
-                Statistics
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Programming & Database</h3>
-
-            <p>
-                SQL<br>
-                VBA<br>
-                Python
-            </p>
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2>Contact</h2>
-
-        <div class="contact-box">
-
-            <p>
+            <a href="mailto:sougatabatabyal7@gmail.com">
                 <i class="fas fa-envelope"></i>
-                sougatabatabyal7@gmail.com
-            </p>
-
-            <p>
-                <i class="fas fa-phone"></i>
-                8910107759
-            </p>
-
-            <p>
-                <i class="fab fa-linkedin"></i>
-                linkedin.com/in/sougata-batabyal-84b1341b7
-            </p>
+            </a>
 
         </div>
 
-    </section>
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © <span id="year"></span> Sougata Batabyal. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Back to Top -->
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
 
     <script src="script.js"></script>
 
-    <a href="https://sougatabatabyal7.github.io/sougata17.github.io/">Sougata.Portfolio</a>
-
 </body>
 </html>
+```
